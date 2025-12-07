@@ -1,0 +1,41 @@
+.particles-container {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: calc(100% + 40px);
+  pointer-events: none;
+  z-index: 2;
+  overflow: visible;
+  border-radius: 20px;
+}
+
+.particle {
+  position: absolute;
+  width: 6.24px;
+  height: 6.24px;
+  background-color: #8650BD;
+  border-radius: 50%;
+  opacity: 0.7;
+  box-shadow: 0 0 6px #8650BD, 0 0 12px #8650BD;
+  animation: float-up linear infinite;
+  bottom: 0;
+}
+
+@keyframes float-up {
+  0% {
+    transform: translateY(0) translateX(0);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0.7;
+  }
+  95% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(calc(-100vh - 20px)) translateX(0);
+    opacity: 0;
+  }
+}
+

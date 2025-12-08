@@ -4,6 +4,7 @@ import Badge from './Badge'
 import naoSeCaleImage from '../assets/img/nao-se-cale.png'
 import loginADMImage from '../assets/img/LoginADM-nsc.png'
 import dashboardADMImage from '../assets/img/DashboardADM-nsc.png'
+import page404Image from '../assets/img/page404-nsc.png'
 import rabiscoframe1Image from '../assets/img/rabiscoframe1.jpg'
 import rabiscoframe2Image from '../assets/img/rabiscoframe2.jpg'
 import habilitaFigmaImage from '../assets/img/habilita-figma.png'
@@ -21,7 +22,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
   const getGalleryImages = () => {
     if (project.id === 1) {
       // Projeto "NÃO SE CALE"
-      return [naoSeCaleImage, loginADMImage, dashboardADMImage]
+      return [naoSeCaleImage, loginADMImage, dashboardADMImage, page404Image]
     }
     if (project.id === 3) {
       // Projeto "Habilita - Interface IOS & Android"
@@ -58,7 +59,7 @@ const ProjectModal = ({ project, isOpen, onClose }: ProjectModalProps) => {
                   • Desenvolvimento do site da iniciativa Não se Cale utilizando React, Vite e Bootstrap, garantindo performance, responsividade e acessibilidade.<br />
                   • Implementação de painel de acesso administrativo para gerenciamento de conteúdo, com autenticação e controle de usuários via Firebase.<br />
                   • Integração com Strapi para modificação do conteúdo da página e postagens de blog e depoimentos.<br />
-                  • Desenvolvimento de interface de dashboard de administrador via Figma com conceitos de UI/UX.<br />
+                  • Desenvolvimento de interface de dashboard de administrador, página de 404 e tela de carregamento via Figma com conceitos e boas práticas de UI/UX.<br />
                   • Uso do Firebase para autenticação, armazenamento e banco de dados, integrando recursos informativos e institucionais para conscientização e engajamento do público com a causa.<br />
                   • Deploy da área administrativa via Azure.
                 </>
